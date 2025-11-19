@@ -7,6 +7,7 @@ export interface Product {
   gia: number;
   soLuong: number;
   moTa: string;
+  hinhAnh: string; // <--- ĐÃ THÊM THUỘC TÍNH HÌNH ẢNH VÀO ĐÂY
 }
 
 // State

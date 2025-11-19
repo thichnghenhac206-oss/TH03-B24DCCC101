@@ -22,6 +22,16 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   return (
     <div className="product-card">
+      
+      {/* 🟢 THẺ HÌNH ẢNH ĐÃ ĐƯỢC THÊM VÀO ĐÂY 🟢 */}
+      <img 
+        src={product.hinhAnh} 
+        alt={product.ten} 
+        // Thêm style để đảm bảo hình ảnh hiển thị đúng kích thước
+        style={{ width: '100%', height: '200px', objectFit: 'cover', marginBottom: '10px', borderRadius: '4px' }}
+      />
+      {/* ------------------------------------------- */}
+
       <div>
         <h3>{product.ten}</h3>
         <p><strong>Danh mục:</strong> {product.danhMuc}</p>

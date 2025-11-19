@@ -20,6 +20,18 @@ const ProductDetail: React.FC = () => {
     <div className="container">
       <h2>Chi tiết Sản phẩm: {product.ten}</h2>
       <div style={{ background: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+        
+        {/* 🟢 THẺ HÌNH ẢNH ĐÃ ĐƯỢC THÊM VÀO ĐÂY 🟢 */}
+        <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+            <img 
+                src={product.hinhAnh} 
+                alt={product.ten} 
+                // Cung cấp kích thước lớn hơn cho trang chi tiết
+                style={{ maxWidth: '400px', height: 'auto', borderRadius: '8px', border: '1px solid #ccc' }}
+            />
+        </div>
+        {/* ------------------------------------------- */}
+
         <p><strong>ID:</strong> {product.id}</p>
         <p><strong>Tên sản phẩm:</strong> {product.ten}</p>
         <p><strong>Danh mục:</strong> {product.danhMuc}</p>

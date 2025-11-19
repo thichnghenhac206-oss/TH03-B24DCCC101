@@ -1,10 +1,17 @@
-body {
+/* * Tối ưu hóa CSS toàn cục. 
+ * Font Inter được ưu tiên cho các ứng dụng Tailwind hiện đại.
+ */
+ body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* Thêm 'Inter' vào đầu danh sách font-family để ưu tiên,
+     sau đó là các font hệ thống phổ biến */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Đảm bảo scrolling mượt mà cho các hiệu ứng cuộn */
+  scroll-behavior: smooth;
 }
 
 code {

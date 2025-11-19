@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+      /* Thiết lập cơ bản và Môi trường */
+      "target": "ES2020",
+      "useDefineForClassFields": true,
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+      "module": "ESNext",
+      "skipLibCheck": true,
+  
+      /* Cấu hình cho JSX/React */
+      "jsx": "react-jsx",
+  
+      /* Cấu hình hệ thống module */
+      "moduleResolution": "bundler",
+      "allowImportingTsExtensions": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+  
+      /* Kiểm tra kiểu nghiêm ngặt và Chất lượng mã (HIGHLY RECOMMENDED) */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "esModuleInterop": true
+    },
+    
+    "include": ["src"],
+    "references": [{ "path": "./tsconfig.node.json" }] 
+  }
